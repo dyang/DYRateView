@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D353DC55F2240468AE06EA5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D353DC55F2240468AE06EA5D /* UIKit.framework */; };
+		D353DC55F2240468AE06EA60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D353DC55F2240468AE06EA5F /* Foundation.framework */; };
+		D353DC55F2240468AE06EA62 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D353DC55F2240468AE06EA61 /* CoreGraphics.framework */; };
+		D353DC55F2240468AE06EA68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D353DC55F2240468AE06EA67 /* InfoPlist.strings */; };
+		D353DC55F2240468AE06EA6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D353DC55F2240468AE06EA69 /* main.m */; };
+		D353DC55F2240468AE06EA6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D353DC55F2240468AE06EA6D /* AppDelegate.m */; };
+		D353DC55F2240468AE06EA71 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D353DC55F2240468AE06EA70 /* DemoViewController.m */; };
+		D353DC55F2240468AE06EA74 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		D353DC55F2240468AE06EA77 /* DYRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = D353DC55F2240468AE06EA76 /* DYRateView.m */; };
+		D353DC55F2240468AE06EA7B /* StarFullLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D353DC55F2240468AE06EA7A /* StarFullLarge@2x.png */; };
+		D353DC55F2240468AE06EA7D /* StarFullLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = D353DC55F2240468AE06EA7C /* StarFullLarge.png */; };
+		D353DC55F2240468AE06EA7F /* StarFull@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D353DC55F2240468AE06EA7E /* StarFull@2x.png */; };
+		D353DC55F2240468AE06EA81 /* StarFull.png in Resources */ = {isa = PBXBuildFile; fileRef = D353DC55F2240468AE06EA80 /* StarFull.png */; };
+		D353DC55F2240468AE06EA83 /* StarEmptyLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D353DC55F2240468AE06EA82 /* StarEmptyLarge@2x.png */; };
+		D353DC55F2240468AE06EA85 /* StarEmptyLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = D353DC55F2240468AE06EA84 /* StarEmptyLarge.png */; };
+		D353DC55F2240468AE06EA87 /* StarEmpty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D353DC55F2240468AE06EA86 /* StarEmpty@2x.png */; };
+		D353DC55F2240468AE06EA89 /* StarEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = D353DC55F2240468AE06EA88 /* StarEmpty.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D353DC55F2240468AE06EA54 /* DYRateView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYRateView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D353DC55F2240468AE06EA5D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D353DC55F2240468AE06EA5F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D353DC55F2240468AE06EA61 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D353DC55F2240468AE06EA65 /* DYRateView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "DYRateView-Info.plist"; sourceTree = "<group>"; };
+		D353DC55F2240468AE06EA66 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D353DC55F2240468AE06EA69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D353DC55F2240468AE06EA6B /* DYRateView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DYRateView-Prefix.pch"; sourceTree = "<group>"; };
+		D353DC55F2240468AE06EA6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D353DC55F2240468AE06EA6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D353DC55F2240468AE06EA6F /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		D353DC55F2240468AE06EA70 /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		D353DC55F2240468AE06EA76 /* DYRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYRateView.m; sourceTree = "<group>"; };
+		D353DC55F2240468AE06EA78 /* DYRateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYRateView.h; sourceTree = "<group>"; };
+		D353DC55F2240468AE06EA7A /* StarFullLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarFullLarge@2x.png"; sourceTree = "<group>"; };
+		D353DC55F2240468AE06EA7C /* StarFullLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarFullLarge.png; sourceTree = "<group>"; };
+		D353DC55F2240468AE06EA7E /* StarFull@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarFull@2x.png"; sourceTree = "<group>"; };
+		D353DC55F2240468AE06EA80 /* StarFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarFull.png; sourceTree = "<group>"; };
+		D353DC55F2240468AE06EA82 /* StarEmptyLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarEmptyLarge@2x.png"; sourceTree = "<group>"; };
+		D353DC55F2240468AE06EA84 /* StarEmptyLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarEmptyLarge.png; sourceTree = "<group>"; };
+		D353DC55F2240468AE06EA86 /* StarEmpty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarEmpty@2x.png"; sourceTree = "<group>"; };
+		D353DC55F2240468AE06EA88 /* StarEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarEmpty.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D353DC55F2240468AE06EA5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D353DC55F2240468AE06EA5E /* UIKit.framework in Frameworks */,
+				D353DC55F2240468AE06EA60 /* Foundation.framework in Frameworks */,
+				D353DC55F2240468AE06EA62 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D353DC55F2240468AE06EA50 = {
+			isa = PBXGroup;
+			children = (
+				D353DC55F2240468AE06EA51 /* Products */,
+				D353DC55F2240468AE06EA5C /* Frameworks */,
+				D353DC55F2240468AE06EA63 /* DYRateView */,
+			);
+			sourceTree = "<group>";
+		};
+		D353DC55F2240468AE06EA51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D353DC55F2240468AE06EA54 /* DYRateView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D353DC55F2240468AE06EA5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D353DC55F2240468AE06EA61 /* CoreGraphics.framework */,
+				D353DC55F2240468AE06EA5F /* Foundation.framework */,
+				D353DC55F2240468AE06EA5D /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D353DC55F2240468AE06EA63 /* DYRateView */ = {
+			isa = PBXGroup;
+			children = (
+				D353DC55F2240468AE06EA70 /* DemoViewController.m */,
+				D353DC55F2240468AE06EA6F /* DemoViewController.h */,
+				D353DC55F2240468AE06EA6D /* AppDelegate.m */,
+				D353DC55F2240468AE06EA6C /* AppDelegate.h */,
+				D353DC55F2240468AE06EA64 /* Supporting Files */,
+				D353DC55F2240468AE06EA75 /* DYRateView */,
+				D353DC55F2240468AE06EA79 /* Resources */,
+			);
+			path = DYRateView;
+			sourceTree = "<group>";
+		};
+		D353DC55F2240468AE06EA64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D353DC55F2240468AE06EA6B /* DYRateView-Prefix.pch */,
+				D353DC55F2240468AE06EA69 /* main.m */,
+				D353DC55F2240468AE06EA67 /* InfoPlist.strings */,
+				D353DC55F2240468AE06EA65 /* DYRateView-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D353DC55F2240468AE06EA75 /* DYRateView */ = {
+			isa = PBXGroup;
+			children = (
+				D353DC55F2240468AE06EA78 /* DYRateView.h */,
+				D353DC55F2240468AE06EA76 /* DYRateView.m */,
+			);
+			path = DYRateView;
+			sourceTree = "<group>";
+		};
+		D353DC55F2240468AE06EA79 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D353DC55F2240468AE06EA88 /* StarEmpty.png */,
+				D353DC55F2240468AE06EA86 /* StarEmpty@2x.png */,
+				D353DC55F2240468AE06EA84 /* StarEmptyLarge.png */,
+				D353DC55F2240468AE06EA82 /* StarEmptyLarge@2x.png */,
+				D353DC55F2240468AE06EA80 /* StarFull.png */,
+				D353DC55F2240468AE06EA7E /* StarFull@2x.png */,
+				D353DC55F2240468AE06EA7C /* StarFullLarge.png */,
+				D353DC55F2240468AE06EA7A /* StarFullLarge@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D353DC55F2240468AE06EA55 /* DYRateView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D353DC55F2240468AE06EA56 /* Build configuration list for PBXNativeTarget "DYRateView" */;
+			buildPhases = (
+				D353DC55F2240468AE06EA59 /* Sources */,
+				D353DC55F2240468AE06EA5A /* Frameworks */,
+				D353DC55F2240468AE06EA5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DYRateView;
+			productName = DYRateView;
+			productReference = D353DC55F2240468AE06EA54 /* DYRateView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D353DC55F2240468AE06EA4E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = D353DC55F2240468AE06EA4F /* Build configuration list for PBXProject "DYRateView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D353DC55F2240468AE06EA50;
+			productRefGroup = D353DC55F2240468AE06EA51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D353DC55F2240468AE06EA55 /* DYRateView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D353DC55F2240468AE06EA5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D353DC55F2240468AE06EA68 /* InfoPlist.strings in Resources */,
+				D353DC55F2240468AE06EA74 /* (null) in Resources */,
+				D353DC55F2240468AE06EA7B /* StarFullLarge@2x.png in Resources */,
+				D353DC55F2240468AE06EA7D /* StarFullLarge.png in Resources */,
+				D353DC55F2240468AE06EA7F /* StarFull@2x.png in Resources */,
+				D353DC55F2240468AE06EA81 /* StarFull.png in Resources */,
+				D353DC55F2240468AE06EA83 /* StarEmptyLarge@2x.png in Resources */,
+				D353DC55F2240468AE06EA85 /* StarEmptyLarge.png in Resources */,
+				D353DC55F2240468AE06EA87 /* StarEmpty@2x.png in Resources */,
+				D353DC55F2240468AE06EA89 /* StarEmpty.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D353DC55F2240468AE06EA59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D353DC55F2240468AE06EA6A /* main.m in Sources */,
+				D353DC55F2240468AE06EA6E /* AppDelegate.m in Sources */,
+				D353DC55F2240468AE06EA71 /* DemoViewController.m in Sources */,
+				D353DC55F2240468AE06EA77 /* DYRateView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D353DC55F2240468AE06EA67 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D353DC55F2240468AE06EA66 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D353DC55F2240468AE06EA52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D353DC55F2240468AE06EA53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D353DC55F2240468AE06EA57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DYRateView/DYRateView-Prefix.pch";
+				INFOPLIST_FILE = "DYRateView/DYRateView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D353DC55F2240468AE06EA58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DYRateView/DYRateView-Prefix.pch";
+				INFOPLIST_FILE = "DYRateView/DYRateView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D353DC55F2240468AE06EA4F /* Build configuration list for PBXProject "DYRateView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D353DC55F2240468AE06EA52 /* Release */,
+				D353DC55F2240468AE06EA53 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D353DC55F2240468AE06EA56 /* Build configuration list for PBXNativeTarget "DYRateView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D353DC55F2240468AE06EA57 /* Release */,
+				D353DC55F2240468AE06EA58 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D353DC55F2240468AE06EA4E /* Project object */;
+}
