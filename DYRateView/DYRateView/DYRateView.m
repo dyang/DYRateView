@@ -145,8 +145,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 }
 
 - (void)notifyDelegate {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(changedToNewRate:)]) {
-        [self.delegate performSelector:@selector(changedToNewRate:) withObject:[NSNumber numberWithFloat:self.rate]];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(rateView:changedToNewRate:)]) {
+        [self.delegate performSelector:@selector(rateView:changedToNewRate:)
+                            withObject:self withObject:[NSNumber numberWithFloat:self.rate]];
     }
 }
 

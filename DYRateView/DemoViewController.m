@@ -112,7 +112,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #pragma mark - DYRateViewDelegate
 
-- (void)changedToNewRate:(NSNumber *)rate {
+- (void)rateView:(DYRateView *)rateView changedToNewRate:(NSNumber *)rate {
     self.rateLabel.text = [NSString stringWithFormat:@"Rate: %d", rate.intValue];
 }
 
