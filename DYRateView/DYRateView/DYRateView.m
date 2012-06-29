@@ -65,6 +65,19 @@ static NSString *DefaultEmptyStarImageFilename = @"StarEmpty.png";
     return self;
 }
 
+- (id)initWithCoder:(NSCoder *)decoder {
+    self = [super initWithCoder:decoder];
+    if (self) {
+        _fullStarImage = [[UIImage imageNamed:DefaultFullStarImageFilename] retain];
+        _emptyStarImage = [[UIImage imageNamed:DefaultEmptyStarImageFilename] retain];
+        _padding = 4;
+        _numOfStars = 5;
+        self.alignment = RateViewAlignmentLeft;
+        self.editable = NO;
+    }
+    return self;
+}
+
 - (void)dealloc {
     [_fullStarImage release]; _fullStarImage = nil;
     [_emptyStarImage release]; _emptyStarImage = nil;
