@@ -27,6 +27,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #import "DYRateView.h"
 
+static NSString *DefaultFullStarImageFilename = @"StarFull.png";
+static NSString *DefaultEmptyStarImageFilename = @"StarEmpty.png";
+
 @interface DYRateView ()
 
 - (void)handleTouchAtLocation:(CGPoint)location;
@@ -43,7 +46,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 @synthesize delegate = _delegate;
 
 - (DYRateView *)initWithFrame:(CGRect)frame {
-    return [self initWithFrame:frame fullStar:[UIImage imageNamed:@"StarFull.png"] emptyStar:[UIImage imageNamed:@"StarEmpty.png"]];
+    return [self initWithFrame:frame fullStar:[UIImage imageNamed:DefaultFullStarImageFilename] emptyStar:[UIImage imageNamed:DefaultEmptyStarImageFilename]];
 }
 
 - (DYRateView *)initWithFrame:(CGRect)frame fullStar:(UIImage *)fullStarImage emptyStar:(UIImage *)emptyStarImage {
