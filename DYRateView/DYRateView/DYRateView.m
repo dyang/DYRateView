@@ -32,6 +32,7 @@ static NSString *DefaultEmptyStarImageFilename = @"StarEmpty.png";
 
 @interface DYRateView ()
 
+- (void)commonSetup;
 - (void)handleTouchAtLocation:(CGPoint)location;
 - (void)notifyDelegate;
 
@@ -57,10 +58,8 @@ static NSString *DefaultEmptyStarImageFilename = @"StarEmpty.png";
 
         _fullStarImage = [fullStarImage retain];
         _emptyStarImage = [emptyStarImage retain];
-        _padding = 4;
-        _numOfStars = 5;
-        self.alignment = RateViewAlignmentLeft;
-        self.editable = NO;
+        
+        [self commonSetup];
     }
     return self;
 }
@@ -70,10 +69,8 @@ static NSString *DefaultEmptyStarImageFilename = @"StarEmpty.png";
     if (self) {
         _fullStarImage = [[UIImage imageNamed:DefaultFullStarImageFilename] retain];
         _emptyStarImage = [[UIImage imageNamed:DefaultEmptyStarImageFilename] retain];
-        _padding = 4;
-        _numOfStars = 5;
-        self.alignment = RateViewAlignmentLeft;
-        self.editable = NO;
+
+        [self commonSetup];
     }
     return self;
 }
@@ -84,6 +81,15 @@ static NSString *DefaultEmptyStarImageFilename = @"StarEmpty.png";
     [super dealloc];
 }
 
+- (void)commonSetup
+{
+    // Include the initialization code that is common to initWithFrame:
+    // and initWithCoder: here.
+    _padding = 4;
+    _numOfStars = 5;
+    self.alignment = RateViewAlignmentLeft;
+    self.editable = NO;
+}
 
 - (void)drawRect:(CGRect)rect
 {
