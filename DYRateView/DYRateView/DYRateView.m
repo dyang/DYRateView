@@ -44,6 +44,8 @@ static NSString *DefaultEmptyStarImageFilename = @"StarEmpty.png";
 @synthesize alignment = _alignment;
 @synthesize padding = _padding;
 @synthesize editable = _editable;
+@synthesize fullStarImage = _fullStarImage;
+@synthesize emptyStarImage = _emptyStarImage;
 @synthesize delegate = _delegate;
 
 - (DYRateView *)initWithFrame:(CGRect)frame {
@@ -142,6 +144,24 @@ static NSString *DefaultEmptyStarImageFilename = @"StarEmpty.png";
 - (void)setEditable:(BOOL)editable {
     _editable = editable;
     self.userInteractionEnabled = _editable;
+}
+
+- (void)setFullStarImage:(UIImage *)fullStarImage
+{
+    if (fullStarImage != _fullStarImage) {
+        [_fullStarImage release];
+        _fullStarImage = [fullStarImage retain];
+        [self setNeedsDisplay];
+    }
+}
+
+- (void)setEmptyStarImage:(UIImage *)emptyStarImage
+{
+    if (emptyStarImage != _emptyStarImage) {
+        [_emptyStarImage release];
+        _emptyStarImage = [emptyStarImage retain];
+        [self setNeedsDisplay];
+    }
 }
 
 - (void)handleTouchAtLocation:(CGPoint)location {
