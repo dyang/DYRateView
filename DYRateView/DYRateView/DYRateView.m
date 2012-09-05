@@ -95,6 +95,24 @@ static NSString *DefaultEmptyStarImageFilename = @"StarEmpty.png";
 
 - (void)drawRect:(CGRect)rect
 {
+    switch (_alignment) {
+        case RateViewAlignmentLeft:
+        {
+            _origin = CGPointMake(0, 0);
+            break;
+        }
+        case RateViewAlignmentCenter:
+        {
+            _origin = CGPointMake((self.bounds.size.width - _numOfStars * _fullStarImage.size.width - (_numOfStars - 1) * _padding)/2, 0);
+            break;
+        }
+        case RateViewAlignmentRight:
+        {
+            _origin = CGPointMake(self.bounds.size.width - _numOfStars * _fullStarImage.size.width - (_numOfStars - 1) * _padding, 0);
+            return;
+        }
+    }
+
     float x = _origin.x;
     for(int i = 0; i < _numOfStars; i++) {
         [_emptyStarImage drawAtPoint:CGPointMake(x, _origin.y)];
@@ -121,24 +139,10 @@ static NSString *DefaultEmptyStarImageFilename = @"StarEmpty.png";
     [self notifyDelegate];
 }
 
-- (void)setAlignment:(RateViewAlignment)alignment {
-    switch (alignment) {
-        case RateViewAlignmentLeft:
-        {
-            _origin = CGPointMake(0, 0);
-            break;
-        }
-    case RateViewAlignmentCenter:
-        {
-            _origin = CGPointMake((self.bounds.size.width - _numOfStars * _fullStarImage.size.width - (_numOfStars - 1) * _padding)/2, 0);
-            break;
-        }
-    case RateViewAlignmentRight:
-        {
-            _origin = CGPointMake(self.bounds.size.width - _numOfStars * _fullStarImage.size.width - (_numOfStars - 1) * _padding, 0);
-            return;
-        }
-    }
+- (void)setAlignment:(RateViewAlignment)alignment
+{
+    _alignment = alignment;
+    [self setNeedsLayout];
 }
 
 - (void)setEditable:(BOOL)editable {
