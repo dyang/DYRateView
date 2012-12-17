@@ -109,7 +109,7 @@ static NSString *DefaultEmptyStarImageFilename = @"StarEmpty.png";
         case RateViewAlignmentRight:
         {
             _origin = CGPointMake(self.bounds.size.width - _numOfStars * _fullStarImage.size.width - (_numOfStars - 1) * _padding, 0);
-            return;
+            break;
         }
     }
 
